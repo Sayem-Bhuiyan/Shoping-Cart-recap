@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoping Cart</title>
+    <style>
+        #cart-section {
+            margin-top: 60px;
+            margin-left: 100px;
+        }
+        input {
+            padding: 20px 10px;
+            font-size: 20px;
+            border-radius: 6px;
+        }
+        button {
+            padding: 20px 10px;
+            font-size: 20px;
+            font-weight: 600;
+            color: rgba(255, 255, 255, 0.781);
+            background-color: rgba(0, 0, 0, 0.849);
+            border-radius: 8px;
+        }
+        li {
+            font-size: 32px;
+            font-weight: 500;
+            line-height: 26px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <section id="cart-section">
+        <input type="text" id="product-name" placeholder="Product Name">
+        <input type="text" id="product-quantity" placeholder="Quantity">
+        <button onclick="addProduct()">Add To Cart</button>
+
+        <ul id="product-container">
+
+        </ul>
+    </section>
+
+    <!-- scripts -->
+    <script src="scripts/cart.js"></script>
+</body>
+</html>
